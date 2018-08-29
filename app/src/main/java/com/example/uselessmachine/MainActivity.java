@@ -90,17 +90,14 @@ public class MainActivity extends AppCompatActivity {
                 count++;
                 if (count < 20) {
                     textViewMessage.setTextSize(count + 10);
-                    textViewMessage.setText(getString(R.string.neutral_face));
                 } else if (count < 40) {
                     textViewMessage.setTextSize(count + 10);
-                    textViewMessage.setText(getString(R.string.smiling_face));
                 } else if (count < 60) {
                     textViewMessage.setTextSize(count + 10);
-                    textViewMessage.setText(getString(R.string.evil_face));
                 } else {
                     textViewMessage.setTextSize(count + 10);
                 }
-                if(!switchUseless.isChecked()){
+                if (!switchUseless.isChecked()) {
                     //Log.d(TAG, "onTick: cancel");
                     cancel();
                 }
@@ -109,7 +106,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 switchUseless.setChecked(false);
-                //Log.d(TAG, "onFinish: switch set to false");
+                if (count < 20) {
+                    textViewMessage.setText(getString(R.string.neutral_face));
+                } else if (count < 40) {
+                    textViewMessage.setText(getString(R.string.smiling_face));
+                } else if (count < 60) {
+                    textViewMessage.setText(getString(R.string.evil_face));
+                    //Log.d(TAG, "onFinish: switch set to false");
+                }
             }
         }.start();
     }

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">UselessMachine</string>
     <string name="main_selfdestruct">Self Destruct</string>
-    <string name="neutral_face">.____.</string>
-    <string name="smiling_face">:)</string>
-    <string name="evil_face">>:)</string>
-    <string name="destruct_face">OoO</string>
+    <string name="neutral_face">(._.)</string>
+    <string name="smiling_face">(*´▽｀*)</string>
+    <string name="evil_face">¯\\_(ツ)_/¯</string>
+    <string name="destruct_face">\\OoO/</string>
 </resources>
