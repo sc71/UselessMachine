@@ -3,6 +3,6 @@
     <string name="main_selfdestruct">Self Destruct</string>
     <string name="neutral_face">.____.</string>
     <string name="smiling_face">:)</string>
-    <string name="happy_face">:D</string>
-    <string name="evil_face">>:D</string>
+    <string name="evil_face">>:)</string>
+    <string name="destruct_face">OoO</string>
 </resources>
